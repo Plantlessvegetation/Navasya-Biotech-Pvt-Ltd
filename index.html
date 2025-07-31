@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation for Truly Eco | Navasya Biotech Pvt Ltd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/lucide-icons@latest/icons/icons.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="quotation-container">
+    <header class="quotation-header">
+        <div class="logo">Truly Eco</div>
+        <div class="header-details">
+            <h1 class="quotation-title">Quotation for <span id="client-company-display">Navasya Biotech Pvt Ltd</span></h1>
+            <p class="company-name"><span id="client-name-display">Navasya Biotech Pvt Ltd</span></p>
+            <div class="quote-meta">
+                <span>Quote ID: #QE-00123</span>
+                <span>Date: <span id="issue-date"></span></span>
+                <span>Valid for: 30 Days</span>
+            </div>
+        </div>
+        <button id="download-pdf-btn" class="btn btn-accent">Download PDF</button>
+    </header>
+
+    <div class="main-content">
+        <aside class="plan-selector">
+            <h3>Choose a Launch Plan</h3>
+            <div class="plan-cards-list">
+                <article class="plan-card active" data-plan="starter">
+                    <h4>Starter Plan</h4>
+                    <p>₹30,000 + Costs</p>
+                </article>
+                <article class="plan-card" data-plan="growth">
+                    <h4>Growth Plan</h4>
+                    <p>₹45,000 + Costs</p>
+                </article>
+                <article class="plan-card" data-plan="full-suite">
+                    <h4>Full Brand Suite</h4>
+                    <p>₹60,000 + Costs</p>
+                </article>
+            </div>
+        </aside>
+
+        <section class="plan-details-view fade-in">
+            <div id="plan-details-content">
+                </div>
+
+            <div class="final-summary fade-in">
+                <div class="summary-item">
+                    <span>Service Fee</span>
+                    <span class="price" id="service-fee-display">₹30,000</span>
+                </div>
+                <div class="summary-item accordion-toggle" data-target="platform-costs-details">
+                    <span>Platform & Tooling Costs</span>
+                    <span class="price" id="platform-costs-display">₹18,000</span>
+                </div>
+                <div class="accordion-content" id="platform-costs-details">
+                    </div>
+                <div class="grand-total">
+                    <span>Grand Total</span>
+                    <span class="total-price" id="grand-total-display">₹48,000</span>
+                </div>
+            </div>
+
+            <div class="cta-section fade-in">
+                <h3>Ready to Launch Your Truly Eco Store?</h3>
+                <p>Confirm your plan and schedule a call to begin the project.</p>
+                <button class="btn btn-primary">Book a Consultation</button>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
