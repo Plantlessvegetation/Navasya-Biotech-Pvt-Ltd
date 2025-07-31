@@ -2,13 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const quotationData = {
         starter: {
-            serviceFee: 30000,
+            serviceFee: 31775,
             platformCosts: {
                 total: 18000,
                 breakdown: [
-                    { name: 'Shopify Basic Plan (3 months)', price: 6000 },
+                    { name: 'Shopify Basic Plan (1 year)', price: 10800 },
                     { name: 'Domain & SSL', price: 2000 },
-                    { name: 'Premium Theme', price: 10000 }
+                    { name: 'Premium Theme', price: 5200 }
                 ]
             },
             features: [
@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         growth: {
-            serviceFee: 45000,
+            serviceFee: 45672,
             platformCosts: {
                 total: 18000,
                 breakdown: [
-                    { name: 'Shopify Basic Plan (3 months)', price: 6000 },
+                    { name: 'Shopify Basic Plan (1 year)', price: 10800 },
                     { name: 'Domain & SSL', price: 2000 },
-                    { name: 'Premium Theme', price: 10000 }
+                    { name: 'Premium Theme', price: 5200 }
                 ]
             },
             features: [
@@ -38,13 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         'full-suite': {
-            serviceFee: 60000,
+            serviceFee: 58974,
             platformCosts: {
                 total: 18000,
                 breakdown: [
-                    { name: 'Shopify Basic Plan (3 months)', price: 6000 },
+                    { name: 'Shopify Advanced Plan (1 year)', price: 10800 },
                     { name: 'Domain & SSL', price: 2000 },
-                    { name: 'Premium Theme', price: 10000 }
+                    { name: 'Premium Theme', price: 5200 }
                 ]
             },
             features: [
@@ -97,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const plan = quotationData[planName];
         if (!plan) return;
 
-        // Use direct textContent update for bug-free reliability
         serviceFeeDisplay.textContent = `₹${plan.serviceFee.toLocaleString('en-IN')}`;
         platformCostsDisplay.textContent = `₹${plan.platformCosts.total.toLocaleString('en-IN')}`;
         grandTotalDisplay.textContent = `₹${(plan.serviceFee + plan.platformCosts.total).toLocaleString('en-IN')}`;
@@ -146,9 +145,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     updatePlanDetails('starter');
-
-    const downloadBtn = document.getElementById('download-pdf-btn');
-    downloadBtn.addEventListener('click', () => {
-        alert('Download functionality would be implemented here using a library like html2pdf.js.');
-    });
 });
